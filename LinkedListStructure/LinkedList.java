@@ -3,6 +3,8 @@ import java.util.ArrayList;
 public class LinkedList {
     private Node first;
     private Node last;
+
+    //Named trashCan because it prevents java from garbage collecting nodes
     private ArrayList<Node> trashCan = new ArrayList<Node>();
 
     public LinkedList() {
@@ -31,6 +33,10 @@ public class LinkedList {
         }
     }
 
+    /*Takes a single command line argument and creates nodes 
+    * for all values up to but not including the argument.
+    * @param args[0] The int to be iterated up to
+    */
     public static void main(String[] args) {
         LinkedList ll = new LinkedList();
         for(int i = 0; i < Integer.parseInt(args[0]); i++) {
