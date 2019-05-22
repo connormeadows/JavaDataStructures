@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 
+//A Simple Doubly Linked List
 public class LinkedList {
     private Node first;
     private Node last;
